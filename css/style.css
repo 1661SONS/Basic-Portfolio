@@ -12,21 +12,50 @@ h1 {
     font-size: 28px;
     color: #4aaaa5;
 }
-nav h1 {
+nav {
+    background-color: #fff;
+    border-bottom: 1px solid #ddd;
+}
+nav span h1 {
     color: white;
     background-color: #4aaaa5;
+    width: 275px;
+    height: 75px;
+    text-align: center;
+    position: relative;
+    left: 143px;
+    vertical-align: middle;
+    line-height: 70px;
 }
-nav li:hover {
-    /* text-decoration: underline; */
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+nav li {
+    display: inline;
+    float: left;
+}
+nav li a {
+    display: block;
+    padding: 8px;
+    color: #777;
+    text-decoration: none;
+}
+nav li a:hover {
     color: black;
-    font-weight: 550;
 }
 .aboutCard {
-    max-width: 960px;
+    max-width: 930px;
     margin: 0 auto;
     background-color: #fff;
-    padding: 50px;
+    padding: 30px;
     border: 1px solid #ddd;
+    margin-top: 40px;
+}
+.aboutCard p {
+    padding: 5px 0 10px 0;
+    line-height: 30px;
 }
 hr {
     display: block;
