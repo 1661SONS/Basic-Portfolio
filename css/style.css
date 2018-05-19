@@ -3,6 +3,9 @@ body {
     font-size: 18px;
     color: #777;
     background-image: url(../Images/topography.png);
+    position: relative;
+    margin: 0;
+    padding-bottom: 10rem;
 }
 h1, h2, h3, h4 {
     font-family: 'Georgia', Times, Times New Roman, serif;
@@ -31,19 +34,25 @@ nav ul {
     list-style-type: none;
     margin: 0;
     padding: 0;
+    overflow: hidden;
+    position: absolute;
+    right: 123px;
+    top: 30px;
 }
 nav li {
-    display: inline;
     float: left;
+}
+.borderRight {
+    border-right: 1px solid #ccc;
 }
 nav li a {
     display: block;
-    padding: 8px;
     color: #777;
     text-decoration: none;
+    padding: 0 18px 0 18px;
 }
 nav li a:hover {
-    color: black;
+    color: #4aaaa5;
 }
 .aboutCard {
     max-width: 930px;
@@ -52,9 +61,19 @@ nav li a:hover {
     padding: 30px;
     border: 1px solid #ddd;
     margin-top: 40px;
+    overflow: auto;
+}
+.aboutCard img {
+    max-width: 500px;
+    transform: rotate(90deg);
+    float: left;
+    position: relative;
+    left: -65px;
+    top: 70px;
+    overflow: hidden;
 }
 .aboutCard p {
-    padding: 5px 0 10px 0;
+    padding-bottom: 20px;
     line-height: 30px;
 }
 hr {
@@ -72,7 +91,9 @@ footer {
     font-size: 14px;
     width: 100%;
     position: absolute;
+    right: 0;
     bottom: 0;
+    left: 0;
     padding: 25px 0 25px 0;
     color: #ddd;
 }
